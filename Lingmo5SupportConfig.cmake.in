@@ -1,0 +1,19 @@
+@PACKAGE_INIT@
+
+# Any changes in this ".cmake" file will be overwritten by CMake, the source is the ".cmake.in" file.
+
+include("${CMAKE_CURRENT_LIST_DIR}/Lingmo5SupportTargets.cmake")
+@PACKAGE_INCLUDE_QCHTARGETS@
+
+set(Lingmo5Support_INSTALL_PREFIX "@PACKAGE_CMAKE_INSTALL_PREFIX@")
+
+set(Lingmo5Support_LIBRARIES Lingmo::Lingmo5Support)
+
+set(LINGMO5SUPPORT_DATAENGINES_PLUGINDIR ${KDE_INSTALL_PLUGINDIR}/lingmo5support/dataengine)
+
+include(CMakeFindDependencyMacro)
+find_dependency(Qt6Gui "@QT_MIN_VERSION@")
+find_dependency(KF6CoreAddons "@KF6_MIN_VERSION@")
+find_dependency(KF6Service "@KF6_MIN_VERSION@")
+
+include("${CMAKE_CURRENT_LIST_DIR}/Lingmo5SupportMacros.cmake")

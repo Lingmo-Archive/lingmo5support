@@ -1,0 +1,18 @@
+/** @page lingmo5support Lingmo5Support
+
+<h2>import org.kde.lingmo.lingmo5support 2.0</h2>
+
+- \link Lingmo5Support::DataSource DataSource \endlink
+- \link Lingmo5Support::DataModel DataModel \endlink
+
+- \link Lingmo5Support::Service Service \endlink
+- \link Lingmo5Support::ServiceJob ServiceJob \endlink
+
+- \link Lingmo5Support::ServiceOperationStatus ServiceOperationStatus \endlink
+
+
+
+*/
+
+// DOXYGEN_SET_PROJECT_NAME = Lingmo5Support
+// vim:ts=4:sw=4:expandtab:filetype=doxygen
